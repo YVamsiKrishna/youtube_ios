@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		AC605A601BFF1A1C00D22285 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC605A5F1BFF1A1C00D22285 /* main.m */; };
 		AC605A631BFF1A1C00D22285 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC605A621BFF1A1C00D22285 /* AppDelegate.m */; };
-		AC605A661BFF1A1C00D22285 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC605A651BFF1A1C00D22285 /* ViewController.m */; };
 		AC605A691BFF1A1C00D22285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC605A671BFF1A1C00D22285 /* Main.storyboard */; };
 		AC605A6C1BFF1A1C00D22285 /* YouTube.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC605A6A1BFF1A1C00D22285 /* YouTube.xcdatamodeld */; };
 		AC605A6E1BFF1A1C00D22285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC605A6D1BFF1A1C00D22285 /* Assets.xcassets */; };
 		AC605A711BFF1A1C00D22285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC605A6F1BFF1A1C00D22285 /* LaunchScreen.storyboard */; };
 		AC605A7C1BFF1A1D00D22285 /* YouTubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC605A7B1BFF1A1D00D22285 /* YouTubeTests.m */; };
 		AC605A871BFF1A1D00D22285 /* YouTubeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC605A861BFF1A1D00D22285 /* YouTubeUITests.m */; };
+		ACC88C7F1C03133100A6A42E /* YouTubeApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC88C7E1C03133100A6A42E /* YouTubeApiManager.m */; };
+		ACC88C841C033B8800A6A42E /* NSURL+YouTubeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC88C831C033B8800A6A42E /* NSURL+YouTubeAdditions.m */; };
+		ACC88C8C1C034CF500A6A42E /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC88C8A1C034CF500A6A42E /* SearchViewController.m */; };
+		ACDFE57F1BFF3BA000C143D7 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDFE57E1BFF3BA000C143D7 /* HomeScreenViewController.m */; };
+		ACDFE5821BFF3D4000C143D7 /* SubscriptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDFE5811BFF3D4000C143D7 /* SubscriptionsViewController.m */; };
+		ACDFE5851BFF3D5200C143D7 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDFE5841BFF3D5200C143D7 /* AccountViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +45,6 @@
 		AC605A5F1BFF1A1C00D22285 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC605A611BFF1A1C00D22285 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC605A621BFF1A1C00D22285 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AC605A641BFF1A1C00D22285 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AC605A651BFF1A1C00D22285 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AC605A681BFF1A1C00D22285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC605A6B1BFF1A1C00D22285 /* YouTube.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YouTube.xcdatamodel; sourceTree = "<group>"; };
 		AC605A6D1BFF1A1C00D22285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +56,18 @@
 		AC605A821BFF1A1D00D22285 /* YouTubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC605A861BFF1A1D00D22285 /* YouTubeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouTubeUITests.m; sourceTree = "<group>"; };
 		AC605A881BFF1A1D00D22285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC88C7D1C03133100A6A42E /* YouTubeApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeApiManager.h; sourceTree = "<group>"; };
+		ACC88C7E1C03133100A6A42E /* YouTubeApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeApiManager.m; sourceTree = "<group>"; };
+		ACC88C821C033B8800A6A42E /* NSURL+YouTubeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+YouTubeAdditions.h"; sourceTree = "<group>"; };
+		ACC88C831C033B8800A6A42E /* NSURL+YouTubeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+YouTubeAdditions.m"; sourceTree = "<group>"; };
+		ACC88C891C034CF500A6A42E /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		ACC88C8A1C034CF500A6A42E /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		ACDFE57D1BFF3BA000C143D7 /* HomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewController.h; sourceTree = "<group>"; };
+		ACDFE57E1BFF3BA000C143D7 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
+		ACDFE5801BFF3D4000C143D7 /* SubscriptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionsViewController.h; sourceTree = "<group>"; };
+		ACDFE5811BFF3D4000C143D7 /* SubscriptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionsViewController.m; sourceTree = "<group>"; };
+		ACDFE5831BFF3D5200C143D7 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		ACDFE5841BFF3D5200C143D7 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +118,11 @@
 		AC605A5D1BFF1A1C00D22285 /* YouTube */ = {
 			isa = PBXGroup;
 			children = (
+				ACC88C811C033AAE00A6A42E /* Categories */,
+				ACC88C801C03133800A6A42E /* API */,
+				ACDFE57C1BFF3B4500C143D7 /* ViewControllers */,
 				AC605A611BFF1A1C00D22285 /* AppDelegate.h */,
 				AC605A621BFF1A1C00D22285 /* AppDelegate.m */,
-				AC605A641BFF1A1C00D22285 /* ViewController.h */,
-				AC605A651BFF1A1C00D22285 /* ViewController.m */,
 				AC605A671BFF1A1C00D22285 /* Main.storyboard */,
 				AC605A6D1BFF1A1C00D22285 /* Assets.xcassets */,
 				AC605A6F1BFF1A1C00D22285 /* LaunchScreen.storyboard */,
@@ -141,6 +157,39 @@
 				AC605A881BFF1A1D00D22285 /* Info.plist */,
 			);
 			path = YouTubeUITests;
+			sourceTree = "<group>";
+		};
+		ACC88C801C03133800A6A42E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ACC88C7D1C03133100A6A42E /* YouTubeApiManager.h */,
+				ACC88C7E1C03133100A6A42E /* YouTubeApiManager.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		ACC88C811C033AAE00A6A42E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				ACC88C821C033B8800A6A42E /* NSURL+YouTubeAdditions.h */,
+				ACC88C831C033B8800A6A42E /* NSURL+YouTubeAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		ACDFE57C1BFF3B4500C143D7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACC88C891C034CF500A6A42E /* SearchViewController.h */,
+				ACC88C8A1C034CF500A6A42E /* SearchViewController.m */,
+				ACDFE57D1BFF3BA000C143D7 /* HomeScreenViewController.h */,
+				ACDFE57E1BFF3BA000C143D7 /* HomeScreenViewController.m */,
+				ACDFE5801BFF3D4000C143D7 /* SubscriptionsViewController.h */,
+				ACDFE5811BFF3D4000C143D7 /* SubscriptionsViewController.m */,
+				ACDFE5831BFF3D5200C143D7 /* AccountViewController.h */,
+				ACDFE5841BFF3D5200C143D7 /* AccountViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC605A661BFF1A1C00D22285 /* ViewController.m in Sources */,
+				ACDFE5821BFF3D4000C143D7 /* SubscriptionsViewController.m in Sources */,
 				AC605A6C1BFF1A1C00D22285 /* YouTube.xcdatamodeld in Sources */,
+				ACDFE57F1BFF3BA000C143D7 /* HomeScreenViewController.m in Sources */,
 				AC605A631BFF1A1C00D22285 /* AppDelegate.m in Sources */,
+				ACC88C8C1C034CF500A6A42E /* SearchViewController.m in Sources */,
+				ACDFE5851BFF3D5200C143D7 /* AccountViewController.m in Sources */,
+				ACC88C7F1C03133100A6A42E /* YouTubeApiManager.m in Sources */,
+				ACC88C841C033B8800A6A42E /* NSURL+YouTubeAdditions.m in Sources */,
 				AC605A601BFF1A1C00D22285 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +554,7 @@
 				AC605A8D1BFF1A1D00D22285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC605A8E1BFF1A1D00D22285 /* Build configuration list for PBXNativeTarget "YouTubeTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +563,7 @@
 				AC605A901BFF1A1D00D22285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC605A911BFF1A1D00D22285 /* Build configuration list for PBXNativeTarget "YouTubeUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +572,7 @@
 				AC605A931BFF1A1D00D22285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

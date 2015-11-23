@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SubscriptionsViewController.h
 //  YouTube
 //
 //  Created by Vamsi Krishna on 20/11/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SubscriptionsViewController : UIViewController
 
 @end
-
