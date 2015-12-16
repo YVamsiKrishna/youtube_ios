@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YoutubePresentedViewController.h"
 
-@interface VideoViewController : UIViewController
-
+@interface VideoViewController : YoutubePresentedViewController
+-(instancetype)initWithVideoDictionary:(NSDictionary*)data;
+-(instancetype)initWithVideoDictionaryForPopular:(NSDictionary*)data;
 @end

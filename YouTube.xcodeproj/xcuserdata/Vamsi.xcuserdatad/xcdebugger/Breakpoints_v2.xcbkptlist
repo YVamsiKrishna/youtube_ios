@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YouTube/SearchViewController.m"
-            timestampString = "469985692.71244"
+            timestampString = "470307711.255847"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "@implementation SearchViewController"
             landmarkType = "3">
          </BreakpointContent>

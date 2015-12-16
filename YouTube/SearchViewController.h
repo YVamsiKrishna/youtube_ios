@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YoutubePresentedViewController.h"
 
-@interface SearchViewController : UIViewController
+@interface SearchViewController : YoutubePresentedViewController
 
 @end

@@ -10,4 +10,5 @@
 
 @interface SearchResultsTableViewCell : UITableViewCell
 
+- (void)setupCellWithThumbnailURL:(NSString*)urlString title:(NSString*)titleString description:(NSString*)descriptionString;
 @end

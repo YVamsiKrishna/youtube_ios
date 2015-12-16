@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YouTubeSearchResult.h"
 
-@interface YouTubeSearchResultVideo : NSObject
-
+@interface YouTubeSearchResultVideo : YouTubeSearchResult
+@property (strong, nonatomic) NSString* videoId ;
 @end

@@ -8,16 +8,36 @@
 
 #import "SearchResultsTableViewCell.h"
 
+@interface SearchResultsTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
+@property (weak, nonatomic) IBOutlet UIImageView *thumbnailImageView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *thumbnailLoadingIndicator;
+
+@end
+
 @implementation SearchResultsTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
+-(void)setupCellWithThumbnailURL:(NSString*)urlString title:(NSString*)titleString description:(NSString*)descriptionString
+{
+    __weak typeof(self) weakSelf = self ;
+    dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), ^{
+        [weakSelf fetchThumbnailImage:urlString];
+    });
+    
+    self.titleLabel.text = titleString ;
+    self.descriptionTextView.text = descriptionString ;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+-(void)fetchThumbnailImage:(NSString*)imageURL
+{
+    NSData* imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageURL]];
+    __weak typeof(self) weakSelf = self ;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [weakSelf.thumbnailLoadingIndicator stopAnimating] ;
+        weakSelf.thumbnailImageView.image = [UIImage imageWithData:imageData];
+    });
 }
 
 @end
